@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "id": "workflow-test",
+  "display_name": "Workflow Test Plugin",
+  "version": "1.0.0",
+  "namespace": "project.workflow-test",
+  "backend": {
+    "entry_point": "agentforge_workflow.plugin:register",
+    "routes_prefix": "/api/workflow-test"
+  },
+  "agents": [
+    {
+      "name": "workflow-test-agent",
+      "path": "agentforge_workflow/agents/workflow_test_agent"
+    }
+  ],
+  "frontend": {
+    "remote_url": "",
+    "nav_label": "",
+    "nav_icon": "",
+    "route": ""
+  }
+}
